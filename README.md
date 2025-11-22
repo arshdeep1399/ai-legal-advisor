@@ -1,4 +1,8 @@
-# ⚖️ AI Legal Advisor – NLP Chatbot & Voice Assistant
+# ⚖️ AI Legal Advisor [Chatbot & Voice Assistant]
+
+**Course** — DATA 622 Natural Language Processing
+**Creators:** Arshdeep Singh | Soumya Bhate | Yatharth Kumar
+**Instructor:** Prof. Tony Diana
 
 AI Legal Advisor is an interactive legal information assistant built with Streamlit.  
 It helps users **ask legal questions via text or voice**, upload **legal PDFs**, and receive **plain‑language explanations** with optional **audio responses**, while enforcing strong **privacy and disclaimer safeguards**.
@@ -73,8 +77,8 @@ Create a `.env` file in the project root (same folder as `legal.py`) and define:
 ```bash
 GROQ_API_KEY=your_groq_api_key_here
 ELEVENLABS_API_KEY=your_elevenlabs_api_key_here
-MONGO_URI=your_mongodb_connection_string
-ELEVEN_VOICE_ID=pNInz6obpgDQGcFmaJgB  # or your preferred ElevenLabs voice ID
+MONGO_URI=your_mongodb_connection_string # preferred to keep mongo_uri in the main file for easy access
+ELEVEN_VOICE_ID=pNInz6obpgDQGcFmaJgB  # or your preferred ElevenLabs voice ID (can keep this in the main file as well, as there is no risk of exposure)
 ```
 
 > Do **not** commit `.env` to Git. Add it to `.gitignore` if you haven’t already.
@@ -132,8 +136,6 @@ streamlit run legal.py
 ```toml
 GROQ_API_KEY = "your_groq_api_key_here"
 ELEVENLABS_API_KEY = "your_elevenlabs_api_key_here"
-MONGO_URI = "your_mongodb_connection_string"
-ELEVEN_VOICE_ID = "pNInz6obpgDQGcFmaJgB"
 ```
 
 4. Deploy – Streamlit will install `requirements.txt`, start the app, and give you a public URL like:
@@ -177,7 +179,7 @@ Always consult a qualified lawyer before making decisions about your legal situa
 
 ---
 
-## 🙌 Credits
+## 🙌 Acknowledgements
 
 - Built as an **NLP project** combining:
   - Streamlit UI,
@@ -186,3 +188,4 @@ Always consult a qualified lawyer before making decisions about your legal situa
   - ElevenLabs speech,
   - And classic NLP tools (topic modeling, word clouds).
 - Designed to be **demo‑friendly**, with both local (full) and cloud (text‑first) modes.
+- Grateful to Prof. Tony Diana for his constant guidance throughout this project and for equipping us with the skills to achieve this milestone.
