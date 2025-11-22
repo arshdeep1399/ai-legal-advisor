@@ -499,13 +499,19 @@ with st.sidebar:
             )
     st.markdown("---")
 # Debug: List audio devices
-    st.markdown("### 🔧 Audio Device Settings")
+        st.markdown("### 🔧 Audio Device Settings")
     with st.expander("🔧 Check Device Settings"):
-        if st.button("List Audio Devices"):
-            devices = sd.query_devices()
-            st.text(str(devices))
-            st.info(f"Default input device: {sd.default.device[0]}")
-            st.info(f"Default output device: {sd.default.device[1]}")
+        if not AUDIO_AVAILABLE:
+            st.info(
+                "Audio device info is only available in the local version of this app. "
+                "On Streamlit Cloud, please use text input or local voice mode."
+            )
+        else:
+            if st.button("List Audio Devices"):
+                devices = sd.query_devices()
+                st.text(str(devices))
+                st.info(f"Default input device: {sd.default.device[0]}")
+                st.info(f"Default output device: {sd.default.device[1]}")
 
     # Query all devices
     devices = sd.query_devices()
