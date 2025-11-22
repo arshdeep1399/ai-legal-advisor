@@ -2,8 +2,8 @@
 # coding: utf-8
 
 import streamlit as st
-# import sounddevice as sd
 
+# --- Safe audio import (local only; Cloud pe gracefully disable) ---
 try:
     import sounddevice as sd
     import scipy.io.wavfile
@@ -13,7 +13,6 @@ except Exception:
     AUDIO_AVAILABLE = False
 
 import numpy as np
-import scipy.io.wavfile
 import ffmpeg
 import shutil
 import os
@@ -37,7 +36,8 @@ from wordcloud import WordCloud
 from sklearn.feature_extraction.text import ENGLISH_STOP_WORDS
 from gensim import corpora
 from gensim.models import LdaModel
-from dotenv import load_dotenv 
+from dotenv import load_dotenv  # NEW
+ 
 
 # Page config
 st.set_page_config(page_title="Legal Advisor AI", layout="centered", page_icon="⚖️")
@@ -228,6 +228,10 @@ if 'uploaded_pdf_text' not in st.session_state:
     st.session_state.uploaded_pdf_text = None
 if 'pdf_filename' not in st.session_state:
     st.session_state.pdf_filename = None
+if 'using_knowledge_base' not in st.session_state:
+    st.session_state.using_knowledge_base = False
+if "use_tts" not in st.session_state:
+    st.session_state.use_tts = True
 
 # UI header
 st.markdown("""
@@ -983,6 +987,7 @@ if AUDIO_AVAILABLE and st.session_state.recording:
             <p style='color: #991B1B;'>Speak clearly and describe your legal question. Click 'Stop & Submit' when done.</p>
         </div>
     """, unsafe_allow_html=True)
+
 
 # ℹ️ Instructions
 # with st.expander("ℹ️ How to Use This Legal Advisor"):
