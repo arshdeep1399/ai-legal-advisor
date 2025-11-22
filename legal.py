@@ -499,7 +499,7 @@ with st.sidebar:
             )
     st.markdown("---")
 # Debug: List audio devices
-        st.markdown("### 🔧 Audio Device Settings")
+    st.markdown("### 🔧 Audio Device Settings")
     with st.expander("🔧 Check Device Settings"):
         if not AUDIO_AVAILABLE:
             st.info(
