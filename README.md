@@ -8,6 +8,8 @@
 
 AI Legal Advisor is an interactive legal information assistant built with Streamlit. It helps users **ask legal questions via text or voice**, upload **legal PDFs**, and receive **plain‑language explanations** with optional **audio responses**, while enforcing strong **privacy and disclaimer safeguards**.
 
+URL - https://ai-legal-advisor-jq5qzbya6tkmnspwzzxrca.streamlit.app/
+
 > ⚠️ This tool provides **general legal information only** and **does not** provide legal advice or create an attorney–client relationship.
 
 ---
