@@ -538,7 +538,6 @@ with st.sidebar:
     #     st.success(f"Devices set → Input: {selected_input}, Output: {selected_output}")
 
 
-
 # 🎙️ Audio Recording Thread
 def record_audio_continuous(stop_event, audio_queue):
     """Record audio continuously until stop_event is set"""
