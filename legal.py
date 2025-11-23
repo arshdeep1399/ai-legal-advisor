@@ -40,7 +40,7 @@ from dotenv import load_dotenv  # NEW
  
 
 # Page config
-st.set_page_config(page_title="Legal Advisor AI", layout="centered", page_icon="⚖️")
+st.set_page_config(page_title="AI Legal Advisor", layout="centered", page_icon="⚖️")
 
 # === Load secrets from .env (local only) ===
 load_dotenv()  # .env file se env variables load karega
@@ -235,7 +235,7 @@ if "use_tts" not in st.session_state:
 
 # UI header
 st.markdown("""
-    <h1 style='text-align: center; color: #B9B28A;'>⚖️ AI Legal Advisor</h1>
+    <h1 style='text-align: center; color: #B9B28A;'>⚖️ AI Legal Advisor ⚖️</h1>
     <p style='text-align: center;'>Your intelligent legal consultation assistant with knowledge base</p>
     <hr>
 """, unsafe_allow_html=True)
