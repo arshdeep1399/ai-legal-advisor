@@ -4,7 +4,7 @@
 
 **Developers:** Arshdeep Singh | Soumya Bhate | Yatharth Kumar 
 
-**Instructor:** Prof. Tony Diana
+**Instructor:** Prof. Muhammad Ali Yousuf
 
 AI Legal Advisor is an interactive legal information assistant built with Streamlit. It helps users **ask legal questions via text or voice**, upload **legal PDFs**, and receive **plain‑language explanations** with optional **audio responses**, while enforcing strong **privacy and disclaimer safeguards**.
 
@@ -193,4 +193,4 @@ Always consult a qualified lawyer before making decisions about your legal situa
   - ElevenLabs speech,
   - And classic NLP tools (topic modeling, word clouds).
 - Designed to be **demo‑friendly**, with both local (full) and cloud (text‑first) modes.
-- Grateful to Prof. Tony Diana for his constant guidance throughout this project and for equipping us with the skills to achieve this milestone.
+- Grateful to Prof. Muhammad Ali Yousuf and Prof. Tony Diana for their constant guidance throughout this project and for equipping us with the skills to achieve this milestone.
