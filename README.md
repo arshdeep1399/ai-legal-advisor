@@ -1,6 +1,6 @@
 # ⚖️ AI Legal Advisor [Chatbot & Voice Assistant]
 
-**Course:** DATA 622 Natural Language Processing (UMBC)
+**Course:** DATA 606 Capstone in Data Science (UMBC)
 
 **Developers:** Arshdeep Singh | Soumya Bhate | Yatharth Kumar 
 
